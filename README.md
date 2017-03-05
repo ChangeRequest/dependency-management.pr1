@@ -89,7 +89,7 @@ Define appropriate number of Store API interfaces that provides API to access/mo
 * remove `Item`
 * checkout - return all items with their amount and cleanup basket
 
-Repositories should be `Storage` to get/read/update/delete items.
+Repositories should use `Storage` to get/read/update/delete items.
 
 Create reference implementation of each Store API interface.
 
