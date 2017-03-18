@@ -69,21 +69,20 @@ Define appropriate `Storage` interface with Create/Read/Update/Delete(CRUD) meth
 
 Create new maven module named `api`.
 
-Define appropriate number of Store API interfaces that provides API to access/modify shop entities.
+Define appropriate number of Store API interfaces that provides API to access/modify shop entities:
+* CategoryRepository
+* PropertyRepository
+* ItemRepository
+* CatalogRepository
+* BasketApi
 
-`CategoryRepository`:
+All repositories should have following methods:
 * saveOrUpdate
 * find
 * remove
 * getAll
 
-`CatalogRepository`:
-* saveOrUpdate
-* find
-* remove
-* getAll
-
-`BasketApi`:
+Basket API should have following methods:
 * add `Item`
 * getLast `n` items
 * remove `Item`
